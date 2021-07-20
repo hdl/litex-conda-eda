@@ -24,8 +24,8 @@ requirements:
   build:
     - {{ compiler('c') }}       [not osx]
     - {{ compiler('cxx') }}     [not osx]
-    - {{ compiler('c') }} 4.0   [osx]
-    - {{ compiler('cxx') }} 4.0 [osx]
+    - {{ compiler('c') }} 10.0   [osx]
+    - {{ compiler('cxx') }} 10.0 [osx]
     - m2-base    [win]
     - fontconfig [not win]
     - make       [not win]

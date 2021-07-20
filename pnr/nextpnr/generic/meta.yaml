@@ -25,8 +25,8 @@ requirements:
   build:
     - {{ compiler('c') }}    [not osx]
     - {{ compiler('cxx') }}  [not osx]
-    - clang_osx-64 4.0       [osx]
-    - clangxx_osx-64 4.0     [osx]
+    - clang_osx-64 10.0       [osx]
+    - clangxx_osx-64 10.0     [osx]
     - m2-base    [win]
     - fontconfig [not win]
     - make       [not win]
@@ -53,7 +53,6 @@ requirements:
     - py-boost {{ boost_version }} [not win]
     - libgcc-ng     [linux]
     - libstdcxx-ng  [linux]
-    - symbiflow-yosys
     - python {{ python_version }}
 
 test:
